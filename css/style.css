@@ -1,132 +1,155 @@
 :root {
-    --card-bg-color: rgb(209,209,209);
-    --bg-color: rgb(102,102,102);
+  --card-bg-color: rgb(209, 209, 209);
+  --bg-color: rgb(102, 102, 102);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    min-height: 100vh;
-    margin: 0;
-    font-family: Roboto, Arial, sans-serif;
-    color: var(--bg-color);
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  color: var(--bg-color);
 }
 
-input, textarea {
-    outline: none;
+input,
+textarea {
+  outline: none;
 }
-
-
 
 body {
-    padding: 20px;
-    background: var(--bg-color);
-  }
-  
-  /* Header/Blog Title */
-  .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: var(--card-bg-color);
-    border-radius: 10px;
-  }
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {
-    float: left;
-    width: 75%;
-  }
-  
-  /* Right column */
+  padding: 20px;
+  background: var(--bg-color);
+}
+
+/* Header/Blog Title */
+.header {
+  margin-top: 19px;
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: var(--card-bg-color);
+  border-radius: 10px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: grid;
+  clear: both;
+}
+
+.ltslogo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--card-bg-color);
+  margin-top: 20px;
+}
+
+.contact .card {
+  position: relative;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.contact {
+  padding-left: 10px;
+}
+
+.form-inner p label {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  background: rgb(133, 133, 133);
+}
+.form-inner textarea {
+  resize: none;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 4px solid rgb(100, 100, 100);
+  background: rgb(133, 133, 133);
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+button:hover {
+  background: rgb(94, 94, 94);
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.topnav a {
+  float: left;
+  color: var(--bg-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover,
+.topnav a:focus {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #d379aa;
+  color: white;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
   .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
-  }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 0;
   }
-  
-  /* Add a card effect for articles */
-  .card {
-    background-color: var(--card-bg-color);
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: grid;
-    clear: both;
-  }
-
-  .ltslogo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: var(--card-bg-color);
-    margin-top: 20px;
-  }
-  
-
-
-  .contact .card {
-      position: relative;
-      width: 80%;
-      border-radius: 10px;
-  }
-
-  .contact {
-      padding-left: 10px;
-  }
-  
-    .form-inner p label {
-        display: block;
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 20px;
-        background: rgb(133, 133, 133);
-        }
-    .form-inner textarea {
-        resize: none;
-        }
-    button {
-        width: 100%;
-        padding: 10px;
-        margin-top: 20px;
-        border-radius: 20px;
-        border: none;
-        border-bottom: 4px solid rgb(100, 100, 100);
-        background: rgb(133, 133, 133); 
-        font-size: 16px;
-        font-weight: 400;
-        color: #fff;
-        }
-    button:hover {
-        background: rgb(94, 94, 94);
-        }
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-  }
+}
