@@ -138,12 +138,14 @@ button:hover {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  transition: 0.3s ease-out;
 }
 
 .topnav a:hover,
 .topnav a:focus {
   background-color: #ddd;
   color: black;
+  transform: scale(1.05);
 }
 .topnav a.active {
   background-color: #d379aa;
