@@ -111,7 +111,35 @@ body {
   padding-top: 10px;
 }
 
-button {
+.btn {
+  background-color: #d379aa;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgb(94, 94, 94);
+}
+
+.btnsoon {
+  background-color: rgb(124, 124, 124);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.btnsoon:hover {
+  background: rgb(94, 94, 94);
+}
+
+.form-btn {
   width: 100%;
   padding: 10px;
   margin-top: 20px;
@@ -123,14 +151,17 @@ button {
   font-weight: 400;
   color: #fff;
 }
-button:hover {
+
+.form-btn:hover {
   background: rgb(94, 94, 94);
 }
+
 .topnav {
   background-color: #333;
   overflow: hidden;
   border-radius: 20px;
 }
+
 .topnav a {
   float: left;
   color: var(--bg-color);
@@ -139,6 +170,10 @@ button:hover {
   text-decoration: none;
   font-size: 17px;
   transition: 0.3s ease-out;
+}
+
+.soon {
+  font-size: 13px;
 }
 
 .topnav a:hover,
