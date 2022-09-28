@@ -6,6 +6,12 @@
   --pink-lavender: #e2b6cfff;
   --plum-web: #e396dfff;
   --rose-pink: #e365c1ff;
+  --pale-pink: #ffdde2ff;
+  --misty-rose: #efd6d2ff;
+  --persian-pink: #ff8cc6ff;
+  --frostbite: #de369dff;
+  --old-lavender: #6f5e76ff;
+  --black-coffee: #403644ff;
 }
 
 * {
@@ -117,13 +123,14 @@ body {
 }
 
 .btn {
-  background-color: #d379aa;
+  background-color: var(--rose-pink);
   color: white;
   border: none;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
   text-decoration: none;
+  transition: 0.3s ease-out;
 }
 
 .btn:hover {
@@ -138,6 +145,7 @@ body {
   cursor: pointer;
   font-size: 20px;
   text-decoration: none;
+  transition: 0.3s ease-out;
 }
 
 .btnsoon:hover {
@@ -188,7 +196,7 @@ body {
   transform: scale(1.05);
 }
 .topnav a.active {
-  background-color: #d379aa;
+  background-color: var(--rose-pink);
   color: white;
 }
 
