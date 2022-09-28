@@ -1,6 +1,11 @@
 :root {
   --card-bg-color: rgb(209, 209, 209);
   --bg-color: rgb(102, 102, 102);
+  --tea-green: #cce8ccff;
+  --snow: #f6efeeff;
+  --pink-lavender: #e2b6cfff;
+  --plum-web: #e396dfff;
+  --rose-pink: #e365c1ff;
 }
 
 * {
